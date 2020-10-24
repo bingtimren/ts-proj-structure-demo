@@ -40,7 +40,7 @@
 
     /* Module Resolution Options */
     "moduleResolution": "node",            /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
-    "baseUrl": "./root3-base-url",                       /* Base directory to resolve non-absolute module names. */
+    "baseUrl": "./src/root3-base-url",                       /* Base directory to resolve non-absolute module names. */
     // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
@@ -62,13 +62,13 @@
 
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
-    "rootDir": "./",
-    "rootDirs": ["./root1","./root2"],
+    "rootDir": "./src",
+    "rootDirs": ["./src/root1","./src/root2"],
     "paths":{
       "@/*":["../root4-@/*"]
     }
   },
   // "include": ["./src1/**/*"],
-  "files": ["root1/main/test.ts"],
+  "files": ["src/root1/main/test.ts"],
 
 }
