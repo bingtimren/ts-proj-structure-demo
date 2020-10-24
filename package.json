@@ -1,0 +1,39 @@
+{
+  "name": "ts-projstruc",
+  "version": "1.0.0",
+  "description": "try typescript project structure",
+  "main": "build/index.js",
+  "scripts": {
+    "clean": "run-p clean:*",
+    "clean:relative-ref-to-package-with-types": "cd root2/relative-ref-to-package-with-types; rm -fr build",
+    "clean:non-relative-ref-to-ts":"rm -f root1/node_modules/non-relative-ref-to-ts.js",
+    "clean:non-relative-ref-to-package-with-types": "cd root1/node_modules/non-relative-ref-to-package-with-types;rm -fr build",
+    "clean:non-relative-ref-to-package-without-types": "cd root1/node_modules/non-relative-ref-to-package-without-types;rm -fr index.js",
+    "clean:from-base-url-package-with-types": "cd root3-base-url/from-base-url-package-with-types; rm -fr build",
+    "clean:from-mapped-non-relative-ref-with-types": "rm -fr root4-@/from-mapped-non-relative-ref-with-types/build;",
+    "clean:root": "rm -fr build",
+    "build": "run-s build:*",
+    "build:relative-ref-to-package-with-types": "cd root2/relative-ref-to-package-with-types; tsc",
+    "build:non-relative-ref-to-ts":"tsc root1/node_modules/non-relative-ref-to-ts.ts",
+    "build:non-relative-ref-to-package-with-types": "cd root1/node_modules/non-relative-ref-to-package-with-types;tsc",
+    "build:non-relative-ref-to-package-without-types": "cd root1/node_modules/non-relative-ref-to-package-without-types;tsc",
+    "build:from-base-url-package-with-types": "cd root3-base-url/from-base-url-package-with-types; tsc",
+    "build:from-mapped-non-relative-ref-with-types": "cd root4-@/from-mapped-non-relative-ref-with-types; tsc",
+    "build:root": "tsc",
+    "assemble": "run-s assemble:*",
+    "assemble:relative-ref-to-package-with-types": "mkdir -p build/final; cp -r root2/relative-ref-to-package-with-types build/final/;",
+    "assemble:relative-ref-to-package-without-types": "mkdir -p build/final; cp -r build/root2/relative-ref-to-package-without-types build/final/;",
+    "assemble:non-relative-ref-to-package-with-types": "mkdir -p build/final/node_modules; cp -r root1/node_modules/non-relative-ref-to-package-with-types build/final/node_modules/;",
+    "assemble:non-relative-ref-to-package-without-types": "mkdir -p build/final/node_modules; cp -r root1/node_modules/non-relative-ref-to-package-without-types build/final/node_modules/",
+    "assemble:from-base-url-package-with-types": "mkdir -p build/final/node_modules; cp root3-base-url/from-base-url-package-with-types; ",
+    "assemble:from-base-url-package-without-types": "mkdir -p build/final; cd root3-base-url/from-base-url-package-without-types; ",
+    "clean-build": "run-s clean build",
+    "run": "node build/root1/src1/test.js",
+    "test": "run-s clean build assemble run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

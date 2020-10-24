@@ -1,0 +1,9 @@
+{
+  "name": "proj2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "types":"build/index.d.ts",
+  "author": "",
+  "license": "ISC"
+}

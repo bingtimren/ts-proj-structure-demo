@@ -1,0 +1,1 @@
+export default "from package under baseUrl without 'types' in package.json"

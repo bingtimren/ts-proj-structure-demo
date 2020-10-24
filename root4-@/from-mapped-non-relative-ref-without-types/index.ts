@@ -1,0 +1,1 @@
+export default "non-relative reference, mapped path, a package.json without types"

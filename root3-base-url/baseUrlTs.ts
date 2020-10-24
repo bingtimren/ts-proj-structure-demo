@@ -1,0 +1,1 @@
+export default "export from baseUrl in a .ts"

@@ -1,0 +1,1 @@
+export default "export from .ts under mapped non-relative path"

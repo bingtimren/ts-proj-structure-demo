@@ -1,0 +1,1 @@
+export default "recursively relatively referenced to .ts"

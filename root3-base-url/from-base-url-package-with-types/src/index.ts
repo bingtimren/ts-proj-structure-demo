@@ -1,0 +1,1 @@
+export default "non-relative reference, from base-url, a package.json with types"

@@ -1,0 +1,1 @@
+export default "relative reference to package without types"
