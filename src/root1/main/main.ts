@@ -44,3 +44,6 @@ export const nonRelativeRefToMappedPackageWithTypes = NonRelativeRefToMappedPack
 import NonRelativeRefToMappedPackageWithoutTypes from "@/from-mapped-non-relative-ref-without-types" // built
 export const nonRelativeRefToMappedPackageWithoutTypes = NonRelativeRefToMappedPackageWithoutTypes
 
+// from referred project
+import ReferencedProject from "referenced"
+export const referencedProject = ReferencedProject

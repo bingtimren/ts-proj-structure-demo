@@ -22,7 +22,7 @@
     "build:non-relative-ref-to-package-without-types": "cd src/root1/node_modules/non-relative-ref-to-package-without-types;tsc",
     "build:from-base-url-package-with-types": "cd src/root3-base-url/from-base-url-package-with-types; tsc",
     "build:from-mapped-non-relative-ref-with-types": "cd src/root4-@/from-mapped-non-relative-ref-with-types; tsc",
-    "build:root": "tsc",
+    "build:root": "tsc --build",
 
     "assemble": "run-s assemble:*",
     "assemble:relative-ref-to-package-with-types": "mkdir -p build/final; cp -r src/root2/relative-ref-to-package-with-types build/final/;",
@@ -35,7 +35,7 @@
     "assemble:root-2":"mkdir -p build/final;cp -r build/root2/* build/final",
     "assemble:root3-base-url":"mkdir -p build/final/node_modules;cp -r build/root3-base-url/* build/final/node_modules",
     "assemble:root4-@":"mkdir -p build/final/node_modules/@;cp -r build/root4-@/* build/final/node_modules/@",
-    
+    "assemble:referenced":"mkdir -p build/final/node_modules; cp -r referenced build/final/node_modules;",
     "clean-build": "run-s clean build",
     "run": "node build/final/main/test.js",
     "test": "run-s clean build assemble run"

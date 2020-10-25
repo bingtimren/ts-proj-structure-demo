@@ -15,7 +15,7 @@
     "outDir": "./build",                        /* Redirect output structure to the directory. */
     // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     // "composite": true,                     /* Enable project compilation */
-    // "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */
+    "tsBuildInfoFile": "./build/tsconfig.tsbuildinfo",               /* Specify file to store incremental compilation information */
     // "removeComments": true,                /* Do not emit comments to output. */
     // "noEmit": true,                        /* Do not emit outputs. */
     // "importHelpers": true,                 /* Import emit helpers from 'tslib'. */
@@ -40,7 +40,6 @@
 
     /* Module Resolution Options */
     "moduleResolution": "node",            /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
-    "baseUrl": "./src/root3-base-url",                       /* Base directory to resolve non-absolute module names. */
     // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
@@ -62,10 +61,12 @@
 
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
+    "baseUrl": "./src/root3-base-url",                       /* Base directory to resolve non-absolute module names. */
     "rootDir": "./src",
     "rootDirs": ["./src/root1","./src/root2"],
     "paths":{
-      "@/*":["../root4-@/*"]
+      "@/*":["../root4-@/*"],
+      "referenced":["../../referenced"]
     }
   },
   // "include": ["./src1/**/*"],
