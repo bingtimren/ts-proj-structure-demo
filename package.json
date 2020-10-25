@@ -12,6 +12,8 @@
     "clean:from-base-url-package-with-types": "cd src/root3-base-url/from-base-url-package-with-types; rm -fr build",
     "clean:from-mapped-non-relative-ref-with-types": "rm -fr src/root4-@/from-mapped-non-relative-ref-with-types/build;",
     "clean:root": "rm -fr build",
+    "clean:buildinfo": "rm -f tsconfig.tsbuildinfo",
+    "clean:referenced": "rm -fr referenced/build",
 
     "build": "run-s build:*",
     "build:relative-ref-to-package-with-types": "cd src/root2/relative-ref-to-package-with-types; tsc",

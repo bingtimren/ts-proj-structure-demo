@@ -1,4 +1,4 @@
-export const src1M1 = "exported from root1/src1/srcM1.ts"
+export const src1M1 = "exported from main"
 
 // Relative References
 // relative reference to a .ts

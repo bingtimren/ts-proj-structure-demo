@@ -6,7 +6,10 @@
 ## Project Reference
 
 Option [references](https://www.typescriptlang.org/tsconfig#references):
-- Purpose: break project into smaller ones, when --build,  
+- Purpose: to break project into smaller pieces (the referred project in "references")
+- Effect:
+  - requires the referenced project enable "composite" (by default true)
+  - when tsc invoked with --build, incremental build the referenced projects 
 
 
 Option: [composite](https://www.typescriptlang.org/tsconfig#composite):
