@@ -1,10 +1,10 @@
 
 
-# Typescript Directory Structure & Configuration Options Test Project
+# Typescript Directory Structure, Module Resolution & Configuration Options Demo
 
 This project tests Typescript project directory structure, module resolution, and relevant configuration options.
 
-- [Typescript Directory Structure & Configuration Options Test Project](#typescript-directory-structure--configuration-options-test-project)
+- [Typescript Directory Structure, Module Resolution & Configuration Options Demo](#typescript-directory-structure-module-resolution--configuration-options-demo)
   - [Run scripts](#run-scripts)
   - [General Options](#general-options)
     - [extends](#extends)
